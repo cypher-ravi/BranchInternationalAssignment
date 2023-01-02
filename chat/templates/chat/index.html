@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Rooms</title>
+</head>
+<body>
+   
+    <form action="{% url 'chat:index' %}" method="post">
+        {% csrf_token %}
+        <input type="radio" id="agent" name="user" value="agent">
+        <label for="agent">Agent</label><br>
+        <input type="radio" id="customer" name="user" value="customer">
+        <label for="customer">Customer</label><br>
+
+        <input type="text" name="username" placeholder="enter your name">
+        <button type="submit">submit</button>
+    </form>
+
+  
+</body>
+</html>

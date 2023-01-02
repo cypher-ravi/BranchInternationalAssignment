@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Agent Chat Rooms</title>
+</head>
+<body>
+   
+
+    <ul>
+        {% if rooms %}
+        {% for room in  rooms %}
+        <a href="{% url 'chat:room' room.room_name username %}"> <li>{{room}}</li></a>
+        {% endfor %}
+        
+        {% else %}
+        <h3>No users to chat</h3>
+        {% endif %}
+        
+        
+      </ul>
+</body>
+</html>

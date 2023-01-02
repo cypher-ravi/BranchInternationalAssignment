@@ -11,12 +11,11 @@ Downlaod the code or use url of repo
 # Step 1 : Install Requirements by cd into mysite folder:
 $ pip install -r requirements.txt
 
-#Step 2 :
-make sure you are in same directory as manage.py and run command
+# Step 2 : Make sure you are in same directory as manage.py and run command
 
 $ python manage.py migrate -> for database 
 
-Create admin username and pass in terminal , make sure you are in project directory
+# Step 3 : Create admin username and pass in terminal , make sure you are in project directory
 
 $ python manage.py createsuperuser 
 -> for dashboard to see messages and rooms whom all users are attached
@@ -27,9 +26,11 @@ in custom user
 -> http://localhost:8000/admin
 
 
+# Step 4:
 $ python manange.py runserver
 
-#Setup up on -> http:localhost:8000/chat/
+# Step 5 : Go to
+- http:localhost:8000/chat/
 
 
 Choose agent or customer
